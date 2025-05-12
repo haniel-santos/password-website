@@ -107,9 +107,9 @@ copyBtn.addEventListener('click', () => {
     const passText = password.innerText;
     if (passText) {
         navigator.clipboard.writeText(passText).then(() => {
-            copyBtn.innerHTML = '<img src="/assets/copy.svg" width="15px" alt="Copy Icon"> Copied!';
+            copyBtn.innerHTML = '<img src="../../assets/copy.svg" width="15px" alt="Copy Icon"> Copied!';
             setTimeout(() => {
-                copyBtn.innerHTML = '<img src="/assets/copy.svg" width="15px" alt="Copy Icon"> Copy';
+                copyBtn.innerHTML = '<img src="../../assets/copy.svg" width="15px" alt="Copy Icon"> Copy';
             }, 2500);
         }) .catch((err) => {
             alert('Failed to copy password to clipboard!');
